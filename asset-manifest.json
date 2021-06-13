@@ -1,7 +1,7 @@
 {
   "files": {
-    "app.js": "/PCOSweb/static/js/app.855f27e4.chunk.js",
-    "app.js.map": "/PCOSweb/static/js/app.855f27e4.chunk.js.map",
+    "app.js": "/PCOSweb/static/js/app.2fe209e0.chunk.js",
+    "app.js.map": "/PCOSweb/static/js/app.2fe209e0.chunk.js.map",
     "runtime~app.js": "/PCOSweb/static/js/runtime~app.1d5e407a.js",
     "runtime~app.js.map": "/PCOSweb/static/js/runtime~app.1d5e407a.js.map",
     "static/js/2.97988600.chunk.js": "/PCOSweb/static/js/2.97988600.chunk.js",
@@ -30,6 +30,6 @@
   "entrypoints": [
     "static/js/runtime~app.1d5e407a.js",
     "static/js/2.97988600.chunk.js",
-    "static/js/app.855f27e4.chunk.js"
+    "static/js/app.2fe209e0.chunk.js"
   ]
 }

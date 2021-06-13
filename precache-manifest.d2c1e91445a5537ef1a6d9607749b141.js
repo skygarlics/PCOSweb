@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "a5df0557c56835964aea",
-    "url": "/PCOSweb/static/js/app.855f27e4.chunk.js"
+    "revision": "17f323297f9ac055f97c",
+    "url": "/PCOSweb/static/js/app.2fe209e0.chunk.js"
   },
   {
     "revision": "bd13cef1abdcd0d77b55",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/PCOSweb/./fonts/SimpleLineIcons.ttf"
   },
   {
-    "revision": "336b0ec4e9d825921de17a9e03c8f1c6",
+    "revision": "096773efc504dfc17d99a892723f16f8",
     "url": "/PCOSweb/index.html"
   },
   {
