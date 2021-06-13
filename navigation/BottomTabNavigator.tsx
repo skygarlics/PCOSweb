@@ -10,9 +10,10 @@ import * as React from 'react';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
-import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
+
+import TimerHome from '~/Screens/TimerHome';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -56,7 +57,7 @@ function TabOneNavigator() {
     <TabOneStack.Navigator>
       <TabOneStack.Screen
         name="TabOneScreen"
-        component={TabOneScreen}
+        component={TimerHome}
         options={{ headerTitle: 'Tab One Title' }}
       />
     </TabOneStack.Navigator>

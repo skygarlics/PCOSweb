@@ -6,7 +6,7 @@ interface Props {}
 const EmptyItem = ({ }: Props) => {
   return (
       <View>
-        <Text style={styles.text}>+를 눌러 체크리스트 등록</Text>
+        <Text style={styles.text}> 체크리스트 비어있음 </Text>
       </View>
   );
 };

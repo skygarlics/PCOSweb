@@ -2,8 +2,10 @@ import React, {useEffect, useRef, useState} from 'react';
 
 import {Button, StyleSheet, Text, View, Alert, TextInput, Platform} from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage'
+import { Background } from '~/Screens/CheckListEditor/CheckListEditScreen/AddCheck/CheckInput/Background';
 
-import BackgroundTimer from 'react-native-background-timer';
+// import BackgroundTimer from 'react-native-background-timer';
+
 
 const padNum = (num: number) => {
     if (num < 10) {
@@ -23,8 +25,11 @@ const secondFromMili = (milisecond: number) => {
     return Math.floor((milisecond % 60000) / 1000)
 };
 
+// interval for vanilla timer
+let _interval = 0;
 
 const Timer = () => {
+
 
     const [timeLimit, setTimelimit] = useState<number>(5000);
     const [secondText, setSecondText] = useState<string>('00');
@@ -39,6 +44,23 @@ const Timer = () => {
 
     var gStartTime: number = 0;
     var gEndTime: number = 0;
+
+
+    // vanila timer functions.
+    // extract later.
+
+    const vStartTimer = (func: Function, interval: number): void => {
+        if (_interval != 0) {
+            return;
+        }
+
+        _interval = setInterval(func, interval);
+    }
+
+    const vStopTimer = (): void => {
+        clearInterval(_interval);
+    }
+
 
     // Vars for minimize render
     let gMinute = 0;
@@ -137,7 +159,8 @@ const Timer = () => {
             return;
         }
         gEndTime = Date.now();
-        BackgroundTimer.stopBackgroundTimer();
+        // BackgroundTimer.stopBackgroundTimer();
+        vStopTimer();
     };
 
 
@@ -163,7 +186,7 @@ const Timer = () => {
             gStartTime += Date.now() - gEndTime;
         }
 
-        BackgroundTimer.runBackgroundTimer(() => {
+        vStartTimer(() => {
             let elapsed = Date.now() - gStartTime;
             setElapsed(elapsed);
         }, 100);
@@ -175,7 +198,7 @@ const Timer = () => {
         <View style={styles.container}>
             <View style={styles.countDowncontainer}>
                 <TextInput
-                    style={styles.countdownText}
+                    style={styles.countdownNumber}
                     editable={timeEditable}
                     keyboardType={'number-pad'}
                     selectTextOnFocus={true}
@@ -192,7 +215,7 @@ const Timer = () => {
                 />
                 <Text style={styles.countdownText}>:</Text>
                 <TextInput
-                    style={styles.countdownText}
+                    style={styles.countdownNumber}
                     editable={timeEditable}
                     keyboardType={'number-pad'}
                     selectTextOnFocus={true}
@@ -229,8 +252,15 @@ const styles = StyleSheet.create({
         justifyContent: 'space-evenly',
     },
     countDowncontainer: {
-        alignSelf: 'center',
+        justifyContent: 'center',
         flexDirection: 'row',
+    },
+    countdownNumber: {
+        width: 200,
+        color: '#000',
+        textAlign: 'center',
+        fontSize: 100,
+        fontWeight: 'bold',
     },
     countdownText: {
         color: '#000',
