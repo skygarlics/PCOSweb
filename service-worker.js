@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/PCOSweb/precache-manifest.735cab01aa2c0fba4e5a33ab6bb5974e.js"
+  "/PCOSweb/precache-manifest.83e35f62be8693efe64c59f2b3d90255.js"
 );
 
 workbox.skipWaiting();
