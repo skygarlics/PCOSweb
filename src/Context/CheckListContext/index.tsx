@@ -15,7 +15,7 @@ const CheckListContextProvider = ({ children }: Props) => {
     const [checkList, setCheckList] = useState<Array<ICheckListValue>>([]);
 
     const addCheckList = (check_str: string): void => {
-        let new_check = { value: check_str, isChecked: false}
+        let new_check = { value: check_str, isChecked: false};
         const list = [...checkList, new_check ];
         setCheckList(list);
         AsyncStorage.setItem('checkList', JSON.stringify(list));

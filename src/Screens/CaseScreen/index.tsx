@@ -5,7 +5,6 @@ import {UserContext} from '~/Context/User';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-import CaseViwer from '~/Screens/CaseViewer';
 import CheckListView from '~/Screens/CheckListVeiw';
 import CaseViewer from '~/Screens/CaseViewer';
 

@@ -10,10 +10,11 @@ import * as React from 'react';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
-import TabTwoScreen from '../screens/TabTwoScreen';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
 
 import TimerHome from '~/Screens/TimerHome';
+import CaseScreen from '~/Screens/CaseScreen';
+import CheckListEditor from '~/Screens/CheckListEditor';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -58,7 +59,7 @@ function TabOneNavigator() {
       <TabOneStack.Screen
         name="TabOneScreen"
         component={TimerHome}
-        options={{ headerTitle: 'Tab One Title' }}
+        options={{ headerTitle: 'TIMER' }}
       />
     </TabOneStack.Navigator>
   );
@@ -71,8 +72,13 @@ function TabTwoNavigator() {
     <TabTwoStack.Navigator>
       <TabTwoStack.Screen
         name="TabTwoScreen"
-        component={TabTwoScreen}
-        options={{ headerTitle: 'Tab Two Title' }}
+        component={CaseScreen}
+        options={{ headerTitle: 'CASE' }}
+      />
+      <TabTwoStack.Screen
+        name="CheckListEditor"
+        component={CheckListEditor}
+        options={{ headerTitle: 'Checklist Editor' }}
       />
     </TabTwoStack.Navigator>
   );
