@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "42014b852025695e3640",
-    "url": "/PCOSweb/static/js/app.981376b6.chunk.js"
+    "revision": "87535396d5d33f9c1927",
+    "url": "/PCOSweb/static/js/app.0e2c89ae.chunk.js"
   },
   {
     "revision": "bd13cef1abdcd0d77b55",
     "url": "/PCOSweb/static/js/runtime~app.1d5e407a.js"
   },
   {
-    "revision": "68315d6110ca0c50c7a5",
-    "url": "/PCOSweb/static/js/2.a1986f49.chunk.js"
+    "revision": "8cc6d06b6a62d9f842c2",
+    "url": "/PCOSweb/static/js/2.97988600.chunk.js"
   },
   {
     "revision": "b3263095df30cb7db78c613e73f9499a",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/PCOSweb/./fonts/SimpleLineIcons.ttf"
   },
   {
-    "revision": "89d9f72da92ce873ee64e2fe80f4aa30",
+    "revision": "17631de3661d67908edc5267a4ebaab7",
     "url": "/PCOSweb/index.html"
   },
   {
@@ -81,7 +81,7 @@ self.__precacheManifest = [
   },
   {
     "revision": "71dc43b3f7512e5d9575fba19e25835a",
-    "url": "/PCOSweb/static/js/2.a1986f49.chunk.js.LICENSE.txt"
+    "url": "/PCOSweb/static/js/2.97988600.chunk.js.LICENSE.txt"
   },
   {
     "revision": "d324ddc823eca6c86688f62576c81e76",
